@@ -1,0 +1,1 @@
+***Simple Script to check for xps laptops onsale on the Dell refurbished website 
