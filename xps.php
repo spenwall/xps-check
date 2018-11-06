@@ -13,9 +13,11 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 $output = curl_exec($ch);
 
-$found = strpos($output, 'Dell');
+$xps = strpos($output, 'xps');
+$XPS = strpos($output, 'XPS');
 
-if ($found) {
+
+if ($xps || $XPS) {
   var_dump('found');
   $result = $mgClient->sendMessage($domain, [
     'from' => 'Dell Checker <dude.wallace@gmail.com>',
